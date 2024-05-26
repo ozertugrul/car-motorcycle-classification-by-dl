@@ -1,6 +1,5 @@
 # car-motobice
 
-Tabii, adım adım detaylı olarak anlatayım:
 
 1. **Kütüphanelerin Yüklenmesi**: Kodun başında, kullanılacak kütüphaneler yüklenir. `os` işletim sistemi ile ilgili işlemleri yapmak için, `numpy` sayısal işlemler için, `matplotlib.pyplot` grafik çizimleri için, `tensorflow.keras.preprocessing.image` görüntü işleme için ve `tensorflow.keras.models` ise model oluşturma için kullanılır.
 
