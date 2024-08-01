@@ -170,25 +170,3 @@ else:
 plt.imshow(img)
 plt.axis('off')
 plt.show()
-
-random_test_image_path = random.choice(os.listdir(test_dir))
-
-# Seçilen resmi model ile tahmin etme
-img_path = os.path.join(test_dir, random_test_image_path)
-img = image.load_img(img_path, target_size=(150, 150))
-img_tensor = image.img_to_array(img)
-img_tensor = np.expand_dims(img_tensor, axis=0)
-img_tensor /= 255.
-
-prediction = model.predict(img_tensor)
-
-# Tahmin sonucunu ekrana yazdırma
-if prediction < 0.5:
-    print("Tahmin: 0 (araba)")
-else:
-    print("Tahmin: 1 (motosiklet)")
-
-# Resmi gösterme
-plt.imshow(img)
-plt.axis('off')
-plt.show()
